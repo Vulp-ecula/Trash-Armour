@@ -1050,7 +1050,11 @@ function App() {
       flexWrap: 'wrap',
       justifyContent: 'center'
     }
-  }, /*#__PURE__*/React.createElement("span", null, "🪲 You"), /*#__PURE__*/React.createElement("span", null, "🕷️ Spider×", cfg.spiderCount, " (avoid!)"), /*#__PURE__*/React.createElement("span", null, "🪨 Wall"), /*#__PURE__*/React.createElement("span", null, "Swipe grid or use keys/buttons")), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", null, "🪲 You"), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("span", {
+    style: {
+      filter: 'drop-shadow(0 0 3px #ff2020)'
+    }
+  }, "🕷️"), " Black Widow×", cfg.spiderCount, " (avoid!)"), /*#__PURE__*/React.createElement("span", null, "🪨 Wall"), /*#__PURE__*/React.createElement("span", null, "Swipe grid or use keys/buttons")), /*#__PURE__*/React.createElement("div", {
     onTouchStart: onGridTouchStart,
     onTouchEnd: onGridTouchEnd,
     style: {
@@ -1076,7 +1080,7 @@ function App() {
     let bg = '#0e0a04';
     if (isW) bg = '#2a1a0a';
     if (tr) bg = '#1c1a06';
-    if (isSp) bg = '#200a0a';
+    if (isSp) bg = '#4a0808';
     if (isB) bg = '#0a2208';
     return /*#__PURE__*/React.createElement("div", {
       key: `${x},${y}`,
@@ -1089,7 +1093,11 @@ function App() {
         justifyContent: 'center',
         fontSize: cpx > 32 ? '1.1rem' : '0.85rem'
       }
-    }, isB ? '🪲' : isSp ? '🕷️' : isW ? '🪨' : tr ? tr.e : /*#__PURE__*/React.createElement("span", {
+    }, isB ? '🪲' : isSp ? /*#__PURE__*/React.createElement("span", {
+      style: {
+        filter: 'drop-shadow(0 0 4px #ff2020) drop-shadow(0 0 2px #ff4040)'
+      }
+    }, "🕷️") : isW ? '🪨' : tr ? tr.e : /*#__PURE__*/React.createElement("span", {
       style: {
         fontSize: '0.5rem',
         color: col.faint,
